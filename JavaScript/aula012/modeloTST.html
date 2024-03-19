@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo INPUT quadro</title>
+    <style>
+        body {
+            background-color: rgb(181, 209, 234);
+            font-size: 10mm;
+        }
+        section1 {
+            font-size: 5mm;
+        }
+        input#horas {
+            outline-color: black;
+            outline-style: solid;
+            outline-width: 0.5mm;
+        }
+        div#res {
+            background-color: aliceblue;
+            width: 295px;
+            height: 295px;
+            line-height: 125px;
+            outline-style:double;
+            border-radius: 3mm;
+        }
+        footer {
+            font-size: 4mm;
+        }
+    </style>
+</head>
+<body>
+    <center><strong>Times</strong></center>
+    <center><br/>
+        <section1>
+            <div id = "res">
+                Hora(24): <input type="number" name="horas" id="horas">
+                <input type="button" value="→" onclick="confirmar()">
+                <div id = "imagem">
+                    <img src="manan.png" alt="manha">
+                </div>
+            </div>
+        </section1>
+    </center>
+    
+    <center><footer>®SPESSOTO</footer></center>
+    <script>
+        function confirmar() {
+            var horario = window.document.getElementById('horas')
+            var resposta = document.getElementById('res')
+            var numero = Number(horario.value)
+            if (numero > 0 && numero <= 12) {
+                document.body.style.background = 'antiquewhite' 
+                numero.innerHTML = `Agora são ${numero.value} horas da manhã. `
+            }
+            else if (numero > 12 && numero <= 18) {
+                document.body.style.background = 'orange'
+                numero.innerHTML = `Agora são ${numero.value} horas da tarde.`
+            }
+            else {
+                document.body.style.background = 'darkblue'
+                numero.innerHTML = `Agora são ${numero.value} horas da noite.`           
+            }
+        }
+    </script>
+</body>
+</html>

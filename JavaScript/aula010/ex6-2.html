@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>010</title>
+    <style>
+        body{
+            background-color: tomato;
+            color: black; font-size: 150%;
+        } 
+        div#area {
+            background-color: rgb(0, 255, 30);
+            font-family: 'Times New Roman', Times, serif;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            outline-style: solid;
+        }
+        area {
+            font-style: bold;
+        }
+    </style>
+</head>
+<body>
+    <center> 
+        <div id = 'area' >
+            <strong>Interaja...</strong>
+        </div>
+    </center>
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', saiu)
+        area.addEventListener('dblclick', clicar2)
+
+        function clicar() {
+            area.innerText = 'Clicou'
+            area.style.background = 'lightblue'
+            var n1 = onclick = 'clicar1()'
+        }   
+        function clicar2() {
+            area.innerText = 'Clicou duas vezes'
+            area.style.background = 'blue'
+        }
+        function entrar() {
+            area.innerText = 'Entrou'
+            area.style.background = 'darkgreen'
+        }
+        function saiu() {
+            area.innerText = 'Saiu'
+            area.style.background = 'magenta'
+        }
+    </script>
+</body>
+</html>

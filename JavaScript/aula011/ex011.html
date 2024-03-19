@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalities - Brazil</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: rgb(43, 174, 226);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p {
+            color: black;
+        }
+        p2 {
+            outline-style: solid;
+            outline-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1><center><strong>Nacionality Test</strong></center></h1>
+    <p><br/>Please input your nacionality down below: </p>
+    <p2><input type="text" name="nac" id="nac"></p2>
+    <input type="button" value="verificar" onclick="testar()">
+    <div id = "res"></div>
+    <script>
+        function testar() {
+            var pais = document.getElementById('nac')
+            var tst = document.getElementById('res')
+            var res1 = String('nac'.value)
+            tst.innerHTML = `<p>You are ${pais.value}</p>`
+                if (pais.value == 'brazilian','Brazilian') {
+                    tst.innerHTML += 'You are a native brazilian'
+                }
+                else {      
+                    tst.innerHTML += 'You are a foreign to Brazil'
+                }
+        }
+    </script>
+</body>
+</html>

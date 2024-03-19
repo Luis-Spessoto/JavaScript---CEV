@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body { 
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1> <center><strong>DOM</strong></center></h1>
+    <p>DOM</p>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var n1 = document.body
+        window.document.write('<br/>Ola Mundo: ' + p1.innerText)
+        //p1.style.color = 'blue'
+        //n1.style.background = 'black'
+        //document.alert(p1.innerText)
+        /* var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+        d.innerText = 'Waiting... '
+        document.getElementById("msg").innerText = 'Waiting'
+        */
+       var d = document.querySelector('div#msg')
+       d.style.background = 'blue'
+    </script>
+</body>
+</html>

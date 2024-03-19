@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TST.007</title>
+    <style>
+        body{
+            color: darkblue;
+            background-color: bisque;
+            font: Times;
+            font-style: oblique;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Again</h1>
+    <p>Again</p>
+    <script>
+        var n1 = window.prompt('Again')
+        document.write(` ${n1.toUpperCase()} <br/>`) 
+        var n2 = Number(prompt('N1 ='))
+        var n3 = Number(prompt('N2 ='))
+        var n5 = n2 + n3
+        document.write(`N1 + N2 = ${n5} <br/>`)
+        var n6 = prompt('NAME: ')
+        var n7 = prompt(`Is your name correct? [${n6}] `)
+        n7.toUpperCase() === 'YES' ? document.write(`Your name is ${n6} and the result to your sum is ${n5}`) : document.write('Sorry that we got your name wrong :(')
+    </script>
+
+</body>
+</html>

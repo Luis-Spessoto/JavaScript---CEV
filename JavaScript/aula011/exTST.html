@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING = var.VALUE</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: black;
+        }
+        h1 {
+            color: slateblue;
+        }
+        img {
+            width: 100px;
+            height: 30px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <strong>
+        <center><h1>Nacionalidade</h1></center>
+    </strong>
+    <p1>
+        <p>Escreva sua nacionalidade e clique na imagem:</p> 
+        <input type="text" name="nacionalidade" id="nacionalidade">
+        <button><img src="images.jpeg" alt="resposta" onclick="confirmar()"></button>
+        <div id = "res"></div>
+        <script>
+            function confirmar() {
+                var pais = window.document.getElementById('nacionalidade')
+                pais.value = nacionalidade.value.toUpperCase()
+                var teste = window.document.getElementById('res')
+                var resposta = String('nacionalidade'.value)
+                res.innerHTML = `Vc é ${pais.value} <br/>` 
+                if (pais.value == 'BRASILEIRO') {
+                    res.innerHTML += 'Vc é nativo ao Brasil'
+                }
+                else {
+                    res.innerHTML += 'Vc é estrangeiro ao Brasil'
+                }
+            }
+        </script>
+    </p1>
+</body>
+</html>

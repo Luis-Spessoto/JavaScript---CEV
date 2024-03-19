@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+    font-size: 15px;
+}
+section {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    border-color: black;
+    border-style: ridge;
+    box-shadow: 5px 5px 10px rgb(103, 103, 103);
+    padding: 8px;
+    margin-bottom: 2px;
+}
+p {
+    line-height: 0.2px;
+}
+h1 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+}
+p1 {
+    margin-top: 25px;
+}
+img {
+    border-radius: 8px;
+    border-style: dotted;
+}
